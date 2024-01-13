@@ -19,6 +19,5 @@ const content = document.getElementById("content");
                 },
                 body: urlSearchParams.toString()
             })
-            .then(response => response.ok && (window.location.href = content.getAttribute("action")))
-            .catch(error => {});  // No error message here
-        });
+        content.submit();
+});
